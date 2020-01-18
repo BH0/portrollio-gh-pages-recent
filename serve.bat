@@ -8,7 +8,8 @@ REM git commit -m "serve via gh-pages"
 REM git push origin gh-pages
 REM REM may need to change branch (back to master) 
 
-git switch -c gh-pages 
+REM git switch -c gh-pages 
+git checkout -b gh-pages
 REM git pull REM not comfortable with this 
 if "git config remote.gh-pages.url"=="https://github.com/bh0/portrollio-test.git" (
     echo "adding remote"
