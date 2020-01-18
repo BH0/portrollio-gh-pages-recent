@@ -10,6 +10,7 @@ REM REM may need to change branch (back to master)
 
 git branch -D gh-pages
 git push origin --delete gh-pages
+git checkout -b gh-pages
 
 REM set exists="git show-ref refs/heads/gh-pages"
 REM if %exists% == "gh-pages"(
