@@ -23,9 +23,10 @@ REM )
 REM git switch -c gh-pages 
 REm git checkout -b gh-pages
 REM git pull REM not comfortable with this 
-if "git config remote.gh-pages.url"=="https://github.com/bh0/portrollio-test.git" (
+
+if "git config remote.gh-pages.url"=="https://github.com/BH0/portrollio-gh-pages-recent.git" (
     echo "adding remote"
-    git remote add gh-pages https://github.com/bh0/portrollio-test.git
+    git remote add gh-pages https://github.com/BH0/portrollio-gh-pages-recent.git
 ) else (
     echo "remote exists, continuing"
 )
