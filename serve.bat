@@ -8,13 +8,16 @@ REM git commit -m "serve via gh-pages"
 REM git push origin gh-pages
 REM REM may need to change branch (back to master) 
 
-REM set exists=`git show-ref refs/heads/<branch-name>`
+git branch -D gh-pages
+git push origin --delete gh-pages
+
+REM set exists="git show-ref refs/heads/gh-pages"
 REM if %exists% == "gh-pages"(
-REM    echo "branch exists"
-REM    git checkout gh-pages
+REM     echo "branch exists"
+REM     git checkout gh-pages
 REM ) else (
 REM     echo "branch does not exist, creating branch via checkout -b gh-pages"
-    git checkout -b gh-pages
+REM     git checkout -b gh-pages
 REM )
 REM git switch -c gh-pages 
 REm git checkout -b gh-pages
